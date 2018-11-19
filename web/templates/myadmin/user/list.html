@@ -112,7 +112,7 @@
                                 </li>
                                 {% for i in pagenums %}
                                 <li {% if pg == i %} class="am-active" {% endif %}>
-                                    <a href="?p={{i}}">{{i}}</a>
+                                     <a href="?p={{i}}&types={{request.GET.types}}&keywords={{request.GET.keywords}}">{{i}}</a>
             
                                 </li>
                                 {% endfor %}
